@@ -1,0 +1,246 @@
+:root{
+--primary: #2196f3;
+--primary-dark: #1565c0; /*màu dùng khi hover*/
+--primary-light: #bbdefb; /*làm nền cho các phần tử hoạt động*/
+--primary-mid:#90caf9;
+--accent: #ff5722;/* màu dùng cho các phần tử nổi bật như nút bấm, liên kết, v.v. */
+--accent2: #f44336; /* màu dùng cho các phần tử nổi bật như nút báo lỗi hoặc xóa */
+--text:black; /* màu chữ chính */
+--text-sub: gray; /* màu chữ phụ */
+--white: #ffffff; /* màu trắng thuần */
+--bg: #f4f8ff; /* màu nền chính */
+--card-bg: #ffffff; /* màu nền cho các thẻ */
+--border: #dce8fa; /* màu dùng cho các đường viền, phân cách */
+--shadow: 0 4px 24px rgba(33,150,243,0.10); /* màu và độ mờ cho bóng đổ */
+--radius: 14px; /* độ bo góc lớn */
+--radius-sm: 8px; /* độ bo góc nhỏ */
+}
+
+/*Universal Selector: áp dụng cho tất cả các phần tử trên trang, 
+giúp đảm bảo rằng tất cả các phần tử đều có cùng một điểm xuất phát về margin, padding và box-sizing.
+Điều này giúp tránh các vấn đề về khoảng cách và kích thước không mong muốn giữa các phần tử. */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{ scroll-behavior: smooth;}/* hiệu ứng thanh cuộn mượt mà khi người dùng nhấp vào liên kết nội bộ trên trang. */
+
+body{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    font-size: 15px;
+}
+a{
+    text-decoration: none;
+    color: var(--text);
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+ul{
+    list-style: none;
+}
+
+/*TOPBAR*/
+.topbar{
+    background: var(--primary-dark);
+    color: var(--white);
+    font-size: 12px;
+    padding: 6px 0;
+}
+/* .topbar-inner: tạo một lớp con bên trong topbar để chứa nội dung của thanh,
+giúp căn chỉnh và tạo khoảng cách giữa các phần tử bên trong. */
+.topbar-inner{
+    max-width: 1280px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+.topbar a{
+    color: rgba(255,255,255,0.85);
+}
+.topbar a:hover{
+    color: var(--white);
+}
+.topbar-left{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+.topbar-right{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+/* .topbar i: áp dụng cho các phần tử <i> bên trong topbar,
+thường được sử dụng để hiển thị icon.*/
+.topbar i{
+    margin-right: 5px;
+}
+
+/*HEADER*/
+header{
+    background: var(--primary);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 16px rgba(33,150,243,0.25);
+}
+.header-inner{
+    max-width: 1280px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    height: 64px;
+}
+
+/*logo*/
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+}
+.logo-icon{
+    width: 40px;
+    height: 40px;
+    background: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo-icon i{
+    color: var(--primary);
+    font-size: 20px;
+}
+.logo-text{
+    font-size: 20px;
+    color: var(--white);
+    font-weight: 800;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+.logo-text span{
+    color:  #ffe082; /* màu vàng nhạt cho phần "Shop" trong logo */
+}
+
+/*search*/
+.search-bar{
+    flex: 1;
+    display: flex;
+    background: white;
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+    border:  2px solid var(--primary-mid);
+    transition: border 0.2s;
+}
+.search-bar:focus-within{
+    border-color: var(--white);
+}
+.search-bar input{
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    font-size: 14px;
+    font-family: inherit;
+    color: var(--text);
+}
+.search-bar button{
+    background: var(--accent);
+    border: none;
+    padding:  0 20px;
+    cursor: pointer;
+    color: var(--white);
+    font-size: 16px;
+    transition: background 0.2s;
+}
+.search-bar button:hover{
+    background: var(--accent2);
+}
+
+/*header actions*/
+.header-actions{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-shrink: 0;
+}
+.hdr-btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    color: var(--white);
+    font-size: 11px;
+    font-weight: 500;
+    padding: 6px 14px;
+    border-radius: var(--radius-sm);
+    transition: background 0.2s;
+    position: relative;
+    cursor: pointer;
+}
+.hdr-btn:hover{
+    background: gray;
+}
+.hdr-btn i{
+    font-size: 18px;
+}
+.cart-badge{
+    position: absolute;
+    top: 2px; right: 8px;
+    background: var(--accent);
+    color: var(--white);
+    font-size: 10px;
+    border-radius: 50%;
+    width: 18px; height: 18px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+}
+
+/*NAV*/
+nav{
+    background: var(--primary-dark);
+}
+.nav-inner{
+    max-width: 1280px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+.nav-item{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--white);
+    padding: 10px 16px;
+    font-size: 13px; font-weight: 500;
+    border-radius: 6px 6px 0 0;
+    cursor: pointer;
+    transition: all 0.2s;
+    white-space: nowrap;
+}
+.nav-item:hover, .nav-item.active{
+    background: var(--primary);
+    color: var(--white);
+}
+.nav-item i{
+    font-size: 14px;
+}
