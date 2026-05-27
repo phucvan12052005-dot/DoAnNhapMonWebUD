@@ -5,27 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TNAT - Cửa hàng điện tử chính hãng</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <script src="main.js" defer></script>
 </head>
 <body>
-    <!-- Topbar -->
     <div class="topbar">
         <div class="topbar-inner">
             <div class="topbar-left">
-                <span><i class="fas fa-phone"></i>1800-1234 (Miễn phí)</span>
+                <span><i class="fas fa-phone"></i> 1800-1234 (Miễn phí)</span>
                 <span><i class="fas fa-map-marker-alt"></i> 180 Cao lỗ, Quận 8, TP. HCM</span>
             </div>
 
             <div class="topbar-right">
-                <a href="#"> <i class="fas fa-user"></i>Đăng nhập</a>
-                <a href="#"> <i class="fas fa-user-plus"></i>Đăng ký</a>
-                <a href="#"> <i class="fas fa-file-alt"></i>Tra cứu đơn hàng</a>
+                <a href="#"> <i class="fas fa-user"></i> Đăng nhập</a>
+                <a href="#"> <i class="fas fa-user-plus"></i> Đăng ký</a>
+                <a href="#"> <i class="fas fa-file-alt"></i> Tra cứu đơn hàng</a>
             </div>
         </div>
     </div>
 
-    <!-- Header -->
-     <header>
+    <header>
         <div class="header-inner">
             <a href="#" class="logo">
                 <div class="logo-icon"><i class="fas fa-bolt"></i></div>
@@ -53,21 +53,162 @@
                 </a>
             </div>
         </div>
-     </header>
+    </header>
 
-     <!--NAV-->
-     <nav>
+    <nav>
         <div class="nav-inner">
-            <div class="nav-item active"><i class="fas fa-mobile-alt"></i> Điện thoại</div>
-            <div class="nav-item"><i class="fas fa-laptop"></i> Laptop</div>
-            <div class="nav-item"><i class="fas fa-tablet-alt"></i> Máy tính bảng</div>
-            <div class="nav-item"><i class="fas fa-headphones"></i> Tai nghe</div>
-            <div class="nav-item"><i class="fas fa-camera"></i> Máy ảnh</div>
-            <div class="nav-item"><i class="fas fa-gamepad"></i> Gaming</div>
-            <div class="nav-item"><i class="fas fa-watch"></i> Đồng hồ thông minh</div>
+            <div class="nav-item active"><i class="fas fa-home"></i> Trang chủ</div>
+            <div class="nav-item"><i class="fas fa-search"></i> Từ khóa được tìm kiếm nhiều nhất</div>
+            <div class="nav-item"><i class="fas fa-shield-halved"></i> Chế độ bảo hành</div>
+            <div class="nav-item"><i class="fas fa-refresh"></i> Thu cũ đổi mới</div>
             <div class="nav-item"><i class="fas fa-bolt" style="color: #ffe082;"></i> Flash sale</div>
         </div>
-     </nav>
+    </nav>
+
+    <main>
+        <div class="wrapper">
+            
+            <div class="hero">
+                <div class="hero-grid">
+                    <ul class="cat-sidebar">
+                        <li class="cat-item"><i class="fas fa-mobile-alt"></i> Điện thoại</li>
+                        <li class="cat-item"><i class="fas fa-laptop"></i> Laptop</li>
+                        <li class="cat-item"><i class="fas fa-tablet-alt"></i> Máy tính bảng</li>
+                        <li class="cat-item"><i class="fas fa-headphones"></i> Tai nghe</li>
+                        <li class="cat-item"><i class="fas fa-circle-play"></i> Smartwatch</li>
+                        <li class="cat-item"><i class="fas fa-camera"></i> Máy ảnh</li>
+                        <li class="cat-item"><i class="fas fa-gamepad"></i> Gaming</li>
+                        <li class="cat-item"><i class="fas fa-tv"></i> Tivi</li>
+                        <li class="cat-item"><i class="fas fa-plug"></i> Phụ kiện</li>
+                    </ul>
+                    
+                    <div class="banner-slider">
+                        <div class="slide active">
+                            <div class="slide-content">
+                                <div class="slide-tag">⚡ Mới ra mắt</div>
+                                <div class="slide-title">iPhone 16 Pro Max</div>
+                                <div class="slide-sub">Camera 5x Optical Zoom · Chip A18 Pro</div>
+                                <div class="slide-price">Từ 34.990.000đ</div>
+                                <button class="btn-buy">Mua ngay</button>
+                            </div>
+                            <img class="slide-img" src="image/iphone16_PNG5.png" alt="iPhone 16 Pro Max">
+                        </div>
+                        
+                        <div class="slide">
+                            <div class="slide-content">
+                                <div class="slide-tag">🔥 Flash Sale</div>
+                                <div class="slide-title">Samsung Galaxy S23 Ultra</div>
+                                <div class="slide-sub">Camera 200MP · Pin 5000mAh</div>
+                                <div class="slide-price">Giảm còn 19.990.000đ</div>
+                                <button class="btn-buy">Mua ngay</button>
+                            </div>
+                            <img class="slide-img" src="image/samsung-galaxy-s25-ultra.webp" alt="Samsung Galaxy S23 Ultra">
+                        </div>
+                        
+                        <div class="slide" style="background: linear-gradient(135deg, #1b5e20 0%, #388e3c 60%, #66bb6a 100%);">
+                            <div class="slide-content">
+                                <div class="slide-tag">💻 Bestseller</div>
+                                <div class="slide-title">MacBook Air<br/>M3 2024</div>
+                                <div class="slide-sub">18 giờ pin · Màn hình Liquid Retina</div>
+                                <div class="slide-price">Từ 27.990.000₫</div>
+                                <button class="btn-buy">Mua ngay</button>
+                            </div>
+                            <img class="slide-img" src="image/maxresdefault.jpg" alt="MacBook M3" style="border-radius: 10px;" />
+                        </div>
+                        
+                        <div class="slide-dots" id="slideDots"></div>
+                    </div> <div class="mini-banners">
+                        <div class="mini-banner mini-banner-1">
+                            <i class="fas fa-headphones mini-banner-icon"></i>
+                            <div class="mini-banner-text">
+                                <div class="label">Tai nghe</div>
+                                <div class="title">AirPods &<br/>TWS Cao Cấp</div>
+                                <div class="discount">Giảm 30%</div>
+                            </div>
+                        </div>
+                        <div class="mini-banner mini-banner-2">
+                            <i class="fas fa-watch mini-banner-icon"></i>
+                            <div class="mini-banner-text">
+                                <div class="label">Smartwatch</div>
+                                <div class="title">Apple Watch<br/>& Galaxy Watch</div>
+                                <div class="discount">Từ 2.990.000₫</div>
+                            </div>
+                        </div>
+                    </div> </div> </div> <div class="promo-bar">
+                <div class="promo-item">
+                    <div class="promo-icon"><i class="fas fa-shipping-fast"></i></div>
+                    <div class="promo-text">
+                        <strong>Giao hàng siêu tốc</strong>
+                        <span>Trong 2 giờ tại TP.HCM</span>
+                    </div>
+                </div>
+                <div class="promo-item">
+                    <div class="promo-icon"><i class="fas fa-shield-alt"></i></div>
+                    <div class="promo-text">
+                        <strong>Bảo hành chính hãng</strong>
+                        <span>12 - 24 tháng tại trung tâm</span>
+                    </div>
+                </div>
+                <div class="promo-item">
+                    <div class="promo-icon"><i class="fas fa-undo"></i></div>
+                    <div class="promo-text">
+                        <strong>Đổi trả trong 30 ngày</strong>
+                        <span>Miễn phí nếu lỗi nhà sản xuất</span>
+                    </div>
+                </div>
+                <div class="promo-item">
+                    <div class="promo-icon"><i class="fas fa-credit-card"></i></div>
+                    <div class="promo-text">
+                        <strong>Trả góp 0%</strong>
+                        <span>Duyệt nhanh qua thẻ tín dụng</span>
+                    </div>
+                </div>
+            </div> 
+            <div class="flash-sale-section">
+                <div class="flash-header">
+                    <div class="flash-title">
+                        <i class="fas fa-bolt"></i>
+                        <strong>FLASH-SALE</strong>
+                    </div>
+                    <div class="countdown">
+                        <div class="count-box" id="cH">00</div>
+                        <span class="count-sep">:</span>
+                        <div class="count-box" id="cM">00</div>
+                        <span class="count-sep">:</span>
+                        <div class="count-box" id="cS">00</div>
+                    </div>
+                </div>
+                <div class="flash-grid" id="flashGrid"></div>
+            </div>
+
+                <!-- BRANDS -->
+                <div class="section-header">
+                <div class="section-title">Chọn theo hãng</div>
+                </div>
+                <div class="brands-row" id="brandsRow">
+                <div class="brand-chip active" onclick="filterBrand('all')"><i class="fas fa-th"></i> Tất cả</div>
+                <div class="brand-chip" onclick="filterBrand('Apple')">🍎 Apple</div>
+                <div class="brand-chip" onclick="filterBrand('Samsung')">📱 Samsung</div>
+                <div class="brand-chip" onclick="filterBrand('Xiaomi')">🔴 Xiaomi</div>
+                <div class="brand-chip" onclick="filterBrand('OPPO')">🟢 OPPO</div>
+                <div class="brand-chip" onclick="filterBrand('Sony')">🔵 Sony</div>
+                <div class="brand-chip" onclick="filterBrand('Asus')">⚡ Asus</div>
+                </div>
+
+                <div class="products-section">
+                <div class="section-header">
+                    <div class="section-title">Điện thoại nổi bật</div>
+                    <div class="see-all">Xem tất cả <i class="fas fa-chevron-right"></i></div>
+                </div>
+                <div class="filter-tabs" id="filterTabs">
+                    <div class="filter-tab active" onclick="filterProducts('all', this)">Tất cả</div>
+                    <div class="filter-tab" onclick="filterProducts('phone', this)">Điện thoại</div>
+                    <div class="filter-tab" onclick="filterProducts('laptop', this)">Laptop</div>
+                    <div class="filter-tab" onclick="filterProducts('tablet', this)">Máy tính bảng</div>
+                    <div class="filter-tab" onclick="filterProducts('audio', this)">Tai nghe</div>
+                </div>
+                <div class="product-grid" id="productGrid"></div>
+            </div> </div> </main>
 
 </body>
 </html>
